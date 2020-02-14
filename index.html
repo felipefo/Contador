@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>Contador</title>
+</head>
+<body>
+<script>
+    function incrementar(){
+	   var contador  = parseInt(document.getElementById("contador").innerHTML);
+	   contador  = contador + 1;
+	   document.getElementById("contador").innerHTML  = contador;
+	 }
+</script>
+<h2>
+  Contador
+</h2>  
+<h3>Sequencial atual:</h3><h3 id="contador">0</h3><input type="button" value="Contar" onclick="incrementar()"></input>
+</body>
+</html>
