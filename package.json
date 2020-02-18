@@ -1,0 +1,27 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "description": "This is a static template with no bundling",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipefo/Contador.git"
+  },
+  "keywords": [
+    "template",
+    "codesandbox",
+    "static"
+  ],
+  "author": "Ives van Hoorne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/felipefo/Contador/issues"
+  },
+  "homepage": "https://github.com/felipefo/Contador#readme",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
+}
