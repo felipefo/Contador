@@ -9,10 +9,22 @@
 	   contador  = contador + 1;
 	   document.getElementById("contador").innerHTML  = contador;
 	 }
+	 
+	 function multiplicar(){
+	   var contador  = parseInt(document.getElementById("contador").innerHTML);
+	   contador  = contador  * contador ;
+	   document.getElementById("multiplo").innerHTML  = contador;
+	 }
+	 
 </script>
+
+
 <h2>
   Contador
 </h2>  
 <h3>Sequencial atual:</h3><h3 id="contador">0</h3><input type="button" value="Contar" onclick="incrementar()"></input>
+
+<h3>Sequencial atual:</h3><h3 id="multiplo">0</h3><input type="button" value="Multiplo" onclick="multiplicar()"></input>
+
 </body>
 </html>
