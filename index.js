@@ -11,10 +11,11 @@ let handleRequest = (request, response) => {
 	console.log('hello world');
 	
     fs.readFile('./index.html', null, function (error, data) {
-        if (error) {
+        if (error) {		
             response.writeHead(404);
-            respone.write('file not found');
+            response.write('file not found');
         } else {
+	    response.setHeader('content-type', 'text/html');
             response.write(data);
         }
         response.end();
