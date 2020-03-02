@@ -1,21 +1,19 @@
-
 var porta = process.env.PORT || 8080;
 let http = require('http');
 let fs = require('fs');
  
 let handleRequest = (request, response) => {
     response.writeHead(200, {
-        'Content-Type': 'text/plain'
+        'Content-Type': 'text/html'
     });
 	
 	console.log('hello world');
 	
     fs.readFile('./index.html', null, function (error, data) {
-        if (error) {		
+        if (error) {
             response.writeHead(404);
-            response.write('file not found');
-        } else {
-	    response.setHeader('content-type', 'text/html');
+            respone.write('file not found');
+        } else {			
             response.write(data);
         }
         response.end();
